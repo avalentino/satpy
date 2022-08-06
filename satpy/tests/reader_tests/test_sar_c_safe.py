@@ -208,7 +208,7 @@ class TestSAFEGRD(unittest.TestCase):
                               6.32142857e-01, 4.79166667e-01, 3.46031746e-01,
                               2.32142857e-01, 1.36904762e-01, 5.97222222e-02,
                               0.00000000e+00]])
-        np.testing.assert_allclose(xarr.values, expected)
+        np.testing.assert_allclose(xarr.values, expected, atol=0.5e-9)
 
 
 annotation_xml = b"""<?xml version="1.0" encoding="UTF-8"?>
